@@ -3,11 +3,6 @@ const {getAllCategoriesDB,
        addNewCategoryDB,
        UpdateCategoryByIdDB,
        deleteCategoryByIdDB}=require('../model/dataBase');
-const { object, string, number,array } = require('yup');
-
- let categorySchema = object({
-    name: string().min(3, 'must be at least 3 characters long').required()                                        
-});
 
 let getAllCategories=(req,res)=>{
     let allCateg=getAllCategoriesDB();
@@ -71,7 +66,5 @@ let deleteCategoryById=(req,res)=>{
     }
      
 }
-
-
 
 module.exports={getAllCategories,getCategoryById,addNewCategory,UpdateCategoryById,deleteCategoryById}

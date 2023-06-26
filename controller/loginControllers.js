@@ -1,6 +1,5 @@
 const {loginDB}=require('../model/dataBase');
 
-
 let login=(req,res)=>{
     try
     {

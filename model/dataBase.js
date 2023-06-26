@@ -4,9 +4,11 @@ require('yup-password')(yup);
 const jwt = require("jsonwebtoken");
 const { createHash } = require("crypto");
 
+//data base arays
 let users=[];
 let products=[];
 let categories=[];
+/////////////////////////////////////////////////////////////////////////////////
 
 ////Schema
 ///////////////category Schema
@@ -31,7 +33,7 @@ const loginschema = yup.object().shape({
     password: yup.string().min(8).minLowercase(1).minUppercase(1).minSymbols(1).required(),
 })
 
-////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
 //////categories data base methods
 let getAllCategoriesDB=()=>{ 

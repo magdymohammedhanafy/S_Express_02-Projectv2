@@ -1,6 +1,5 @@
 const {addNewUserDB}=require('../model/dataBase');
 
-
 let addNewUser=(req,res)=>{
     try
     {

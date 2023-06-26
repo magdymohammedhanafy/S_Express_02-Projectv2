@@ -1,7 +1,6 @@
 const { Router } =require ("express");
 const {getAllCategories,getCategoryById,addNewCategory,UpdateCategoryById,deleteCategoryById}=require('../controller/categoriesController');
 const categoriesRouter=Router();
-const verifyToken=require('../middleWare/Authentication')
 module.exports=categoriesRouter;
 
 
